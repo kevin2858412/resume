@@ -99,7 +99,7 @@ header nav ul li a {
 body div.first {
   width: 100%;
   min-height: 90vh;
-  background-image: url(/面試作品/resume/pexels-jéshoots-218863.jpg);
+  background-image: url("pexels-jéshoots-218863.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
