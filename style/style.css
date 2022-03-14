@@ -55,9 +55,9 @@ header div.logo a {
 }
 
 header div.logo span.img {
-  background-image: url("./resume/style/letter-k.png");
-  -webkit-mask: url("./resume/style/letter-k.png");
-          mask: url("./resume/style/letter-k.png");
+  background-image: url("./style/letter-k.png");
+  -webkit-mask: url("./style/letter-k.png");
+          mask: url("./style/letter-k.png");
   -webkit-mask-size: 100% 100%;
           mask-size: 100% 100%;
   width: 5vh;
