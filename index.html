@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-hent">
+<meta>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的履歷</title>
+    <meta name="description" content="有關我的相關訊息"  />
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./jQueryRotate.js"></script>
+    </script>
+    <script src="./jQuery.js"></script>
+</head>
+<header>
+    <div class="logo">
+        <a href="#"><span class="img"></span></a>
+        <h2>My resume</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about" id="to_about">About</a></li>
+            <li><a href="#skill" id="to_skill">Skill</a></li>
+            <li><a href="#contact" id="to_contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="one">    
+        <div class="first">
+        <div class="filter"></div>
+        <h2>Welcome</h2>
+        </div>
+    </section>
+
+    <section class="two" id="about">
+        <div class="intro">
+        <h2>關於我</h2>
+        <p>我是陳禹丞,畢業自國立勤益科技大電機系<br/>
+        積極,樂於團隊合作,喜歡挑戰新事物<br/>
+        目前以年內考到日語N1及精進自己的前端技能為目標。</p>
+        </div>
+    </section>
+
+    <section class="three" id="skill">
+        <h2>Skill</h2>
+        <section class="card">
+        <div class="card">
+            <div class="img">
+                <img src="./settings.png" alt="picture" />
+            </div>
+            <h1>前端技術</h1>
+            <p>Html,CSS,jQuery<br/>
+            AJAX,JavaScript<br/>
+            Vue3</p>
+            </div>
+        <div class="card">
+                <div class="img">
+                <img src="./tools.png" alt="picture" />
+                </div>
+                <h1>善用工具</h1>
+                <p>VScode,Github,Figma</p>
+        </div>            
+        </section>
+
+    </section>
+
+    <section class="four" id="contact">
+        <div class="contact">
+            <div class="profile">            
+                <img src="./20220107_214336.jpg" alt="picture" class="mine">
+            <h2>陳禹丞</h2>
+            <img src="./email.png" alt="picture">
+            <a href="mailto:kevin2858412@gmail.com">kevin2858412@gmail.com</a>
+            </div>
+            <a href="#"><img src="./github.png" alt="picture" >
+            </a>
+        </div>
+    </section>
+</body>
+</html>

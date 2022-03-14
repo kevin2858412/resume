@@ -1,0 +1,284 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  scroll-behavior: smooth;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #afb6c4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  margin: 1rem;
+}
+
+header div.logo h2 {
+  padding-left: 0.5rem;
+}
+
+header div.logo a {
+  width: 3vw;
+  height: 3vw;
+}
+
+header div.logo span.img {
+  background-image: url(/面試作品/resume/letter-k.png);
+  -webkit-mask: url(/面試作品/resume/letter-k.png);
+          mask: url(/面試作品/resume/letter-k.png);
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  width: 5vh;
+  height: 5vh;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  background-color: #1e3a4d;
+  background-size: cover;
+  display: inline-block;
+  background-blend-mode: lighten;
+}
+
+header h2 {
+  margin-left: 1rem;
+  color: black;
+}
+
+header nav {
+  padding-right: 2rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding-left: 2rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+body div.first {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(/面試作品/resume/pexels-jéshoots-218863.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body div.first div.filter {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  z-index: 1;
+}
+
+body div.first h2 {
+  font-size: 4rem;
+  margin: 12rem;
+  color: #918e8c;
+}
+
+body div.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #edf5a8;
+  opacity: 0;
+}
+
+body div.intro h2 {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+body div.intro p {
+  font-size: 1.5rem;
+}
+
+body section.three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 45vh;
+}
+
+body section.three h2 {
+  padding-top: 1.5rem;
+  font-size: 3.5rem;
+}
+
+body section.three section.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body section.three section.card div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+body section.three section.card div.card h1 {
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+
+body section.three section.card div.card p {
+  font-size: 1.2rem;
+}
+
+body section.three section.card div.card div.img {
+  padding-top: 1.5vh;
+  border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
+  background-color: #7efcfc;
+}
+
+body section.three section.card div.card div.img img {
+  height: 9vw;
+  width: 9vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body section.three section.card div.card div.img :hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: white;
+}
+
+section.four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 35vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: khaki;
+  padding: 2rem;
+}
+
+section.four div.profile {
+  margin: 2rem;
+}
+
+section.four div.profile img {
+  height: 1vw;
+  width: 1vw;
+}
+
+section.four div.profile img.mine {
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+}
+
+section.four img {
+  height: 2vw;
+  width: 2vw;
+}
+
+@media screen and (max-width: 595px) {
+  body section.card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */

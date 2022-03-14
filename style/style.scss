@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header {
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(175, 182, 196);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  div.logo {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100px;
+    margin: 1rem;
+    h2 {
+      padding-left: 0.5rem;
+    }
+    a {
+      width: 3vw;
+      height: 3vw;
+    }
+    span.img {
+      // 用不同顏色的濾鏡覆蓋顏色
+      background-image: url(/面試作品/resume/letter-k.png);
+      mask: url(/面試作品/resume/letter-k.png);
+      mask-size: 100% 100%;
+      width: 5vh;
+      height: 5vh;
+      margin-left: 1rem;
+      margin-top: 0.3rem;
+      background-color: rgb(30, 58, 77);
+      background-size: cover;
+      display: inline-block;
+      background-blend-mode: lighten;
+    }
+  }
+
+  h2 {
+    margin-left: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  nav {
+    padding-right: 2rem;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        padding-left: 2rem;
+        a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+body {
+  div.first {
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(/面試作品/resume/pexels-jéshoots-218863.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div.filter {
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 4rem;
+      margin: 12rem;
+      color: rgb(145, 142, 140);
+    }
+  }
+  div.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(237, 245, 168);
+    opacity: 0;
+    h2 {
+      margin: 2rem;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  section.three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 45vh;
+    h2 {
+      padding-top: 1.5rem;
+      font-size: 3.5rem;
+    }
+    section.card {
+      display: flex;
+      width: 100%;
+      div.card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1 1 300px;
+
+        h1 {
+          margin: 1.5rem;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+        div.img {
+          padding-top: 1.5vh;
+          border-radius: 50%;
+          height: 12vw;
+          width: 12vw;
+          background-color: rgb(126, 252, 252);
+          img {
+            height: 9vw;
+            width: 9vw;
+            transition: 0.5s;
+          }
+          :hover {
+            transform: scale(1.5);
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+section.four {
+  display: flex;
+  flex-direction: column;
+  min-height: 35vh;
+  flex: 1 1 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: khaki;
+  padding: 2rem;
+  div.profile {
+    margin: 2rem;
+    img {
+      height: 1vw;
+      width: 1vw;
+    }
+    img.mine {
+      height: 25vh;
+      width: 25vh;
+      border-radius: 50%;
+    }
+  }
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+@media screen and (max-width: 595px) {
+  body {
+    section.card {
+      flex-wrap: wrap;
+    }
+  }
+}
